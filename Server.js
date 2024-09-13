@@ -290,12 +290,12 @@ app.get('/api/personal-tasks', async (req, res) => {
   }
 });
 
-// מסלול להוספת משימה אישית חדשה
+// מסלול להוספת משימה אישית חדשה 3
 app.post('/api/personal-tasks', async (req, res) => {  // הוספת מילת מפתח async כאן
   const { taskName, taskDescription, additionalNotes, dueDate, status, user } = req.body; // קבלת נתונים מהבקשה
 
   try {
-    console.log('Received task creation request:', req.body); // לוג לנתונים שהתקבלו
+    console.log('Received task creation 1232request:', req.body); // לוג לנתונים שהתקבלו
 
     // וידוא שיש שם משתמש ושם משימה
     if (!taskName || !user) {
